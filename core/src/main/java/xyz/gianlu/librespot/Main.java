@@ -14,6 +14,6 @@ import java.security.GeneralSecurityException;
 public class Main {
 
     public static void main(String[] args) throws IOException, GeneralSecurityException, Session.SpotifyAuthenticationException, SpotifyIrc.IrcException, MercuryClient.PubSubException {
-        new Session.Builder(new FileConfiguration(new File("conf.properties"), args)).create();
+        new Session.Builder(new FileConfiguration(new File("../../conf.properties"), args)).create();
     }
 }
